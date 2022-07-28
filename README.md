@@ -1,6 +1,6 @@
 # RailsGoogleLogin
 
-This is a Rails project with google omniauth authentication.
+This is a Rails project with google omniauth authentication based on this vídeo: https://www.youtube.com/watch?v=CnZnwV38cjo
 
 ## Config
 You need set environment variables. After dowload the project, follow the steps:
