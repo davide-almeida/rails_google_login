@@ -1,24 +1,21 @@
-# README
+# RailsGoogleLogin
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Rails project with google omniauth authentication.
 
-Things you may want to cover:
+## Config
+You need set environment variables. After dowload the project, follow the steps:
+* Remove `config/credentials.yml.enc` and `config/master.key` (if there are).
+* run `EDITOR="code --wait" rails credentials:edit` and add your "google api omniauth Client ID and Secret keys". Like this:
+```ruby
+google_oauth_client_id: myAwesomeClientIdKeyHere
+google_oauth_client_secret: myAwesomeSecretKeyHere
+```
+Save and close the file.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Now you can run:
+```bash
+rails db:create db:migrate
+rails s
+```
+and visit `http://localhost:3000`
+=)
